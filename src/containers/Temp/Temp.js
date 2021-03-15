@@ -8,8 +8,8 @@ class Temp extends React.Component{
             <div className='temp'>
                 <div className='header'>
                     <h1>Witam na mojej stronie</h1>
-                    <ul className='temp_nav'>
-                        <nav>
+                    <nav className='temp_nav'>
+                        <ul>
                             <li>
                                 <a href='#'>O mnie</a>
                                 <ul>
@@ -24,8 +24,8 @@ class Temp extends React.Component{
                                     <li>O kimś innym 2</li>
                                 </ul>
                             </li>
-                        </nav>
-                    </ul>
+                        </ul>
+                    </nav>
                 </div>
                 
                 <div className='content'>

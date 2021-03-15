@@ -14,18 +14,18 @@ div.footer {
     text-transform: uppercase;
 }
 
-ul.temp_nav {
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-ul.temp_nav nav {
+nav.temp_nav {
     text-align: center;
     background-color: #404040;
 }
 
-ul.temp_nav > nav > li {
+nav.temp_nav > ul > li {
     display: inline-block;
     padding: 10px;
     position: relative;
@@ -34,16 +34,16 @@ ul.temp_nav > nav > li {
     margin: 0 10px;
 }
 
-ul.temp_nav a {
+nav.temp_nav a {
     color: white;
     text-decoration: none;
 }
 
-ul.temp_nav li:hover > ul {
+nav.temp_nav ul li:hover > ul {
     display: block;
 }
 
-ul.temp_nav li > ul {
+nav.temp_nav ul li > ul {
     padding: 0;
     width: 100%;
     left: 0;
@@ -55,13 +55,13 @@ ul.temp_nav li > ul {
     box-shadow: 1px 1px 2px black;
 }
 
-ul.temp_nav li > ul > li {
+nav.temp_nav ul li > ul > li {
     width: 100%;
     background-color: #404040;
     padding: 5px;
 }
 
-ul.temp_nav > nav > li > ul > li:hover {
+nav.temp_nav ul > li > ul > li:hover {
     background-color: white;
     color: black;
     cursor: pointer;
