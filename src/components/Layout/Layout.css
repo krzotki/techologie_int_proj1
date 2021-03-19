@@ -34,6 +34,11 @@ header nav ul {
     font-size: 18px;
 }
 
+header nav ul li {
+    width: 15%;
+    text-align: center;
+}
+
 header nav ul a {
     color: rgb(49, 75, 218);
     text-decoration: none;
@@ -65,4 +70,9 @@ section.page_content {
     margin: 10px 10px 0 10px;
     overflow-y: auto;
     text-align: center;
+}
+
+a.active {
+    text-decoration: underline;
+    font-weight: bold;
 }

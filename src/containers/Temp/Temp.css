@@ -1,31 +1,31 @@
-img {
+.temp img {
     width: 30%;
 }
 
-div.temp {
+.temp div.temp {
     background-color: #eeeeee;
 }
 
-div.content {
+.temp div.content {
     background-color: #dddddd;
 }
 
-div.footer {
+.temp div.footer {
     text-transform: uppercase;
 }
 
-ul {
+.temp ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-nav.temp_nav {
+.temp nav.temp_nav {
     text-align: center;
     background-color: #404040;
 }
 
-nav.temp_nav > ul > li {
+.temp nav.temp_nav > ul > li {
     display: inline-block;
     padding: 10px;
     position: relative;
@@ -34,16 +34,16 @@ nav.temp_nav > ul > li {
     margin: 0 10px;
 }
 
-nav.temp_nav a {
+.temp nav.temp_nav a {
     color: white;
     text-decoration: none;
 }
 
-nav.temp_nav ul li:hover > ul {
+.temp nav.temp_nav ul li:hover > ul {
     display: block;
 }
 
-nav.temp_nav ul li > ul {
+.temp nav.temp_nav ul li > ul {
     padding: 0;
     width: 100%;
     left: 0;
@@ -55,19 +55,19 @@ nav.temp_nav ul li > ul {
     box-shadow: 1px 1px 2px black;
 }
 
-nav.temp_nav ul li > ul > li {
+.temp nav.temp_nav ul li > ul > li {
     width: 100%;
     background-color: #404040;
     padding: 5px;
 }
 
-nav.temp_nav ul > li > ul > li:hover {
+.temp nav.temp_nav ul > li > ul > li:hover {
     background-color: white;
     color: black;
     cursor: pointer;
 }
 
-section.jumbotron {
+.temp section.jumbotron {
     width: 100%;
     height: 100vh;
     padding-top: 42vh;
@@ -78,12 +78,12 @@ section.jumbotron {
     overflow: hidden;
 }
 
-section.jumbotron h1 {
+.temp section.jumbotron h1 {
     color: white;
     font-size: 40px;
 }
 
-section.jumbotron button {
+.temp section.jumbotron button {
     margin-top: 50px;
     padding: 20px;
     background-color: red;
@@ -93,21 +93,21 @@ section.jumbotron button {
     transition: all .3s;
 }
 
-section.jumbotron button:hover {
+.temp .temp section.jumbotron button:hover {
     background-color: orangered;
 }
 
-section.gallery {
+.temp section.gallery {
     height: 400px;
     overflow-y: auto;
 }
 
-section.gallery img {
+.temp section.gallery img {
     float: left;
     width: 25%;
 }
 
-section.gallery img:hover {
+.temp section.gallery img:hover {
     opacity: 0.8;
     cursor: pointer;
 }

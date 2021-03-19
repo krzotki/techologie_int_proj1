@@ -1,6 +1,6 @@
 import React from 'react';
 import Aux from '../../hoc/ReactAux';
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 import './Layout.css';
 
 const layout = (props) => (
@@ -11,10 +11,10 @@ const layout = (props) => (
             </div>
             <nav>
                 <ul>
-                    <li> <Link to='/'>Home</Link> </li>
-                    <li> <Link to='/friends'>Friends</Link> </li>
-                    <li> <Link to='/temp'>Temp</Link> </li>
-                    <li> <Link to='/profile'>Profile</Link> </li>
+                    <li> <NavLink to='/' exact>Home</NavLink> </li>
+                    <li> <NavLink to='/friends' exact>Friends</NavLink> </li>
+                    <li> <NavLink to='/temp' exact>Temp</NavLink> </li>
+                    <li> <NavLink to='/profile' exact>Profile</NavLink> </li>
                 </ul>
             </nav>
         </header>
