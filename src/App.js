@@ -5,6 +5,7 @@ import Posts from './containers/Posts/Posts';
 import Friends from './containers/Friends/Friends';
 import Profile from './containers/Profile/Profile';
 import Temp from './containers/Temp/Temp';
+import PostDetails from './components/PostDetails/PostDetails';
 import {Route} from 'react-router-dom';
 
 class App extends React.Component
@@ -17,6 +18,7 @@ class App extends React.Component
                     <Route path='/friends' exact component={Friends}/>
                     <Route path='/profile' exact component={Profile}/>
                     <Route path='/temp' exact component={Temp}/>
+                    <Route path='/post/:id' exact component={PostDetails}/>
                 </Layout>
             </BrowserRouter>
         );

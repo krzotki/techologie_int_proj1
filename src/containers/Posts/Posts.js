@@ -9,21 +9,36 @@ import './Posts.css';
 class Posts extends React.Component {
 
     state = {
-        posts: []
+        posts: [],
     }
 
     componentDidMount() {
         axios.get('https://jsonplaceholder.typicode.com/posts').then((response) => {
-            console.log(response);
             this.setState({
                 posts: response.data
             });
         });
     }
 
+    handlePostClick(id) {
+        
+        this.props.history.push({
+            pathname: '/post/' + id
+        });
+    }
+
     render() {
 
-        const postsToRender = this.state.posts.map(post => <Post key={post.id} title={post.title}> {post.body} </Post>);
+        const postsToRender = this.state.posts.map(post => {
+            return(
+                <Post 
+                    key={post.id} 
+                    title={post.title} 
+                    id={post.id}
+                    clicked={() => this.handlePostClick(post.id)}
+                > {post.body} </Post>
+            );
+        });
 
         return(
             <div className='posts'>
