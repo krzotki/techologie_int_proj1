@@ -1,4 +1,6 @@
 import React from "react";
+
+import 'font-awesome/css/font-awesome.min.css';
 import './Temp.css';
 
 class Temp extends React.Component{
@@ -6,6 +8,10 @@ class Temp extends React.Component{
     render() {
         return(
             <div className='temp'>
+
+                <h1>Sprawozdanie 1</h1>
+                <hr/>
+
                 <div className='header'>
                     <h1>Witam na mojej stronie</h1>
                     <nav className='temp_nav'>
@@ -53,6 +59,38 @@ class Temp extends React.Component{
                 </div>
 
                 <div className='footer'><p>Ale fajna stópka</p></div>
+
+                <hr/>
+                <h1>Sprawozdanie 2</h1>
+
+                <div className='gradient-buttons'>
+                    <button className='button-grad purple'>Purple button</button>
+                    <button className='button-grad yellow'>Yellow button</button>
+                    <button className='button-grad blue'>Blue button</button>
+                </div>
+
+                <div className='star8 gold'>
+                    <i className='fa fa-hand-o-up'></i>
+                </div>
+
+                <div className='star8 orange'>
+                     <i className='fa fa-diamond'></i>
+                </div>
+                <div className='star8 blue'>
+                    <i className='fa fa-flask'></i>
+                </div>
+
+                <section className='social'>
+                    <h2>Say hello!</h2>
+
+                    <div className='panel'>
+                        <button className='twitter'><i className="fa fa-twitter"></i></button>
+                        <button className='facebook'><i className="fa fa-facebook"></i></button>
+                        <button className='google-plus'><i className="fa fa-google-plus"></i></button>
+                        <button className='button instagram'><i className="fa fa-instagram"></i></button>
+                        <button className='github'><i className="fa fa-github"></i></button>
+                    </div>
+                </section>
             </div>
         );
     }

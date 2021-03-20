@@ -111,3 +111,182 @@
     opacity: 0.8;
     cursor: pointer;
 }
+
+.temp button.button-grad {
+    display: inline-block;
+    margin: 4px 2px;
+    padding: 15px 30px;
+    min-width: 30%;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;   
+    background-color: inherit;
+    border: solid 1px;
+    background-position: 100% 0;
+    background-size: 300%;
+    transition: 0.4s;
+}
+
+.temp button.button-grad:hover {
+    background-position: 0 100%;
+    color: white;
+}
+
+.temp .button-grad.purple {
+    background-image: linear-gradient(90deg, #8e44ad 50%, transparent 50%);
+}
+
+.temp .button-grad.yellow {
+    background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+}
+
+.temp .button-grad.blue {
+    background-image: linear-gradient(135deg, #3498db 50%, transparent 50%);
+}
+
+.temp .star8 {
+    display: inline-block;
+    margin: 2em;
+    transform: rotate(22deg);
+    transition: backround linear .3s;
+}
+
+.temp .star8::before {
+    background-color: #ffffff;
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    transform: rotate(45deg);
+}
+
+.temp .star8,
+.temp .star8::before,
+.temp .star8 i.fa {
+    width: 80px;
+    height: 80px;
+    box-sizing: unset;
+    text-align: start;
+}
+
+.temp .star8.gold,
+.temp .star8.gold::before {
+    border: solid 6px #ffc107;
+}
+
+.temp .star8.orange,
+.temp .star8.orange::before {
+    border: solid 6px #fd7e33;
+}
+
+.temp .star8.blue,
+.temp .star8.blue::before {
+    border: solid 6px #3fb0ac;
+}
+
+.temp .star8 i.fa {
+    margin: 0;
+    position: absolute;
+    background-color: white;
+    font-size: 60px;
+}
+
+.temp .star8 i.fa::before {
+    transform: rotate(-22deg);
+    position: absolute;
+    margin: 10px;
+}
+
+.temp .star8.gold:hover::before,
+.temp .star8.gold:hover, 
+.temp .star8.gold:hover i.fa {
+    background-color: #ffc107;
+}
+
+.temp .star8.orange:hover::before,
+.temp .star8.orange:hover, 
+.temp .star8.orange:hover i.fa {
+    background-color: #fd7e33;
+}
+
+.temp .star8.blue:hover::before,
+.temp .star8.blue:hover, 
+.temp .star8.blue:hover i.fa {
+    background-color: #3fb0ac;
+}
+
+.temp .star8:hover::before,
+.temp .star8:hover, 
+.temp .star8:hover i.fa {
+    transition: ease-in-out .3s;
+}
+
+.social h2 {
+    color: #505050;
+    font-size: 40px;
+}
+
+.social {
+    margin: 0 auto;
+    width: 500px;
+    padding: 50px;
+}
+
+.social .panel button {
+    width: 75px;
+    height: 75px;
+    border: 0;
+    color: #ffffff;
+    border-radius: 50%;
+    margin: 20px;
+    color: black;
+    cursor: pointer;
+    box-shadow: 0px 1px 3px black;
+    font-size: 40px;
+}
+
+.social .panel button.twitter {
+    color: #4099FF;
+}
+
+.social .panel button.twitter:hover {
+    background-color: #4099FF;
+}
+
+.social .panel button.facebook {
+    color: #3B5998;
+}
+
+.social .panel button.facebook:hover {
+    background-color: #3B5998;
+}
+
+.social .panel button.google-plus {
+    color: #DB5A3C;
+}
+
+.social .panel button.google-plus:hover {
+    background-color: #DB5A3C;
+}
+
+.social .panel button.instagram {
+    color: #5C3D2E;
+}
+
+.social .panel button.instagram:hover {
+    background-color: #5C3D2E;
+}
+
+.social .panel button.github {
+    color: #303030;
+}
+
+.social .panel button.github:hover {
+    background-color: #303030;
+}
+
+.social .panel button:hover {
+    transform: scale(1.1);
+    color: white;
+}
