@@ -1,7 +1,7 @@
 import React from "react";
 
 import 'font-awesome/css/font-awesome.min.css';
-import './Temp.css';
+import './Temp.scss';
 
 class Temp extends React.Component{
 
@@ -91,6 +91,24 @@ class Temp extends React.Component{
                         <button className='github'><i className="fa fa-github"></i></button>
                     </div>
                 </section>
+
+                <div className='grid_container'>
+                    <h1>Super grid :)</h1>
+                    <div className='grid_row'>
+                        <div className='grid_col-5'>col 5</div>
+                        <div className='grid_col-7'>col 7</div>
+                    </div>
+                    <div className='grid_row'>
+                        <div className='grid_col-3'>col 3</div>
+                        <div className='grid_col-9'>col9</div>
+                    </div>
+                    <div className='grid_row'>
+                        <div className='grid_col-6 grid_col_offsetX-6'>col 6 offset 6</div>
+                    </div>
+                    <div className='grid_row footer'>
+                        <div className='grid_col-12'>Stopka</div>
+                    </div>
+                </div>
             </div>
         );
     }

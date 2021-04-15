@@ -72,7 +72,7 @@
     height: 100vh;
     padding-top: 42vh;
     text-align: center;
-    background-image: url("/src/assets/images/2.jpg");
+    background-image: url("../../../src/assets/images/2.jpg");
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -291,8 +291,37 @@
     color: white;
 }
 
-.temp .container {
-    width: 100%;
+.temp .grid_container {
+    width: 90%;
     max-width: 900px;
-    margin: 0 auto;
+    margin: 20px auto;
+}
+
+.temp .grid_row,
+.temp .grid_row::before {
+    content: "";
+    display: table;
+    clear: both;
+    width: 100%;
+}
+
+[class*="grid_col-"] {
+    float: left;
+    min-height: 1px;
+    padding: 5px;
+    border: dashed 1px;
+}
+
+$twelfth: 8.333%;
+
+@for $var from 1 to 13 {
+    .grid_col-#{$var} {
+        width: $var * $twelfth;
+    }
+}
+
+@for $var from 1 to 12 {
+    .grid_col_offsetX-#{$var} {
+        margin-left: $var * $twelfth;
+    }
 }
