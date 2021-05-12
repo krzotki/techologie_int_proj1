@@ -47,26 +47,49 @@ class Temp extends React.Component{
                         <button>Ponętny przycisk</button>
                     </section>
 
-                    <section className='gallery'>
-                        <img src='/images/0.jpg' alt='cat1' />
-                        <img src='/images/1.jpg' alt='cat2' />
-                        <img src='/images/3.jpg' alt='cat3' />
-                        <img src='/images/4.jpg' alt='cat4' />
-                        <img src='/images/5.jpg' alt='cat4' />
-            
+                    <section className='gallery rwd_container'>
+                    <div className='rwd_row'>
+                        <img src='/images/0.jpg' className='rwd_col-3 rwd_col_m-6' alt='cat1' />
+                        <img src='/images/1.jpg' className='rwd_col-3 rwd_col_m-6' alt='cat2' />
+                        <img src='/images/3.jpg' className='rwd_col-3 rwd_col_m-6' alt='cat3' />
+                        <img src='/images/4.jpg' className='rwd_col-3 rwd_col_m-6' alt='cat4' />
+                        <img src='/images/5.jpg' className='rwd_col-3 rwd_col_m-6' alt='cat4' />
+                    </div>
                     </section>
                     
                 </div>
 
-                <div className='footer'><p>Ale fajna stópka</p></div>
-
+                <div className='footer rwd_container'>
+                    <div className='rwd_row'>
+                        <p className='rwd_col-6 rwd_col_m-12'>Ale fajna stópka</p>
+                        <div className='grid_container rwd_col-6 rwd_col_m-12'>
+                                <h1>Super grid :)</h1>
+                                <div className='grid_row'>
+                                    <div className='grid_col-5'>col 5</div>
+                                    <div className='grid_col-7'>col 7</div>
+                                </div>
+                                <div className='grid_row'>
+                                    <div className='grid_col-3'>col 3</div>
+                                    <div className='grid_col-9'>col9</div>
+                                </div>
+                                <div className='grid_row'>
+                                    <div className='grid_col-6 grid_col_offsetX-6'>col 6 offset 6</div>
+                                </div>
+                                <div className='grid_row footer'>
+                                    <div className='grid_col-12'>Stopka</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 <hr/>
                 <h1>Sprawozdanie 2</h1>
 
-                <div className='gradient-buttons'>
-                    <button className='button-grad purple'>Purple button</button>
-                    <button className='button-grad yellow'>Yellow button</button>
-                    <button className='button-grad blue'>Blue button</button>
+                <div className='gradient-buttons rwd_container'>
+                    <div className='rwd_row'>
+                        <button className='button-grad purple rwd_col-4 rwd_col_m-12'>Purple button</button>
+                        <button className='button-grad yellow rwd_col-4 rwd_col_m-12'>Yellow button</button>
+                        <button className='button-grad blue rwd_col-4 rwd_col_m-12'>Blue button</button>
+                    </div>
                 </div>
 
                 <div className='star8 gold'>
@@ -92,23 +115,7 @@ class Temp extends React.Component{
                     </div>
                 </section>
 
-                <div className='grid_container'>
-                    <h1>Super grid :)</h1>
-                    <div className='grid_row'>
-                        <div className='grid_col-5'>col 5</div>
-                        <div className='grid_col-7'>col 7</div>
-                    </div>
-                    <div className='grid_row'>
-                        <div className='grid_col-3'>col 3</div>
-                        <div className='grid_col-9'>col9</div>
-                    </div>
-                    <div className='grid_row'>
-                        <div className='grid_col-6 grid_col_offsetX-6'>col 6 offset 6</div>
-                    </div>
-                    <div className='grid_row footer'>
-                        <div className='grid_col-12'>Stopka</div>
-                    </div>
-                </div>
+              
             </div>
         );
     }

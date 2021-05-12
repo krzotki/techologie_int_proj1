@@ -37,7 +37,7 @@ class Layout extends React.Component {
                 <nav>
                     <ul>
                         <li> <NavLink to='/friends' exact>Friends</NavLink> </li>
-                        <li> <NavLink to='/temp' exact>Temp</NavLink> </li>
+                        {/* <li> <NavLink to='/temp' exact>Temp</NavLink> </li> */}
                         <li> <NavLink to='/profile' exact>Profile</NavLink> </li>
                     </ul>
                 </nav>

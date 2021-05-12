@@ -1,5 +1,4 @@
 .temp img {
-    width: 30%;
 }
 
 .temp div.temp {
@@ -104,7 +103,6 @@
 
 .temp section.gallery img {
     float: left;
-    width: 25%;
 }
 
 .temp section.gallery img:hover {
@@ -323,5 +321,50 @@ $twelfth: 8.333%;
 @for $var from 1 to 12 {
     .grid_col_offsetX-#{$var} {
         margin-left: $var * $twelfth;
+    }
+}
+
+* {
+    box-sizing: border-box;
+} 
+
+.rwd_container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto; 
+}
+
+.rwd_container * {
+    margin: 0 !important;
+}
+
+.rwd_row:before,
+.rwd_row:after {
+    content: "";
+    display: table ;
+    clear: both;
+}
+
+[class*="rwd_col-"] {
+    width: 100%;
+    padding: 12px;
+    float:left;
+}
+    
+
+
+$twelfth: 8.333%;
+
+@for $var from 1 to 13 {
+    .rwd_col-#{$var} {
+        width: $var * $twelfth;
+    }
+}
+
+@media (max-width: 768px) {
+    @for $var from 1 to 13 {
+        .rwd_col_m-#{$var} {
+            width: $var * $twelfth;
+        }
     }
 }
